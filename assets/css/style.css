@@ -40,12 +40,28 @@ h1 {
     color: #252525;
 }
 
+#menu {
+  letter-spacing: 4px;
+  font-size: 110%;
+  list-style-type: none;  /* this removes the bullet points from an ul */
+}
+
+#menu > li {      /* this targets all the li items inside the menu */
+  margin-bottom: 1em;
+}
+
+.active {         /* this is to highlight the page we're on ie. Home Gallery Sign Up */
+  border-bottom: 1px solid #3a3a3a;
+}
+
+
 /* Main content */
 main {
   background-color: lightblue;
   /* Make main element take up any surplus space to push footer down */
   flex: 1 0 auto;
 }
+
 
 /* Footer */
 footer {
