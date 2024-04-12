@@ -90,9 +90,35 @@ main {
   background-color: lightblue;
   /* Make main element take up any surplus space to push footer down */
   flex: 1 0 auto;
+  margin-top: 47px;     /* to push the main content down as the header is set to fixed */
 }
 
 /* Footer */
 footer {
   background-color: orange;
+}
+
+/* Media query: tablets and larger (786px and up) */
+/* This is to make the webpage respond differently to mobile, tablet, laptop and pc */
+@media screen and (min-width: 768px) {
+  nav {
+    display: block;
+    position: relative;
+    box-shadow: none;
+    width: fit-content;
+    padding-right: 1rem;
+  }
+
+  #menu {
+    display: flex;    /* to make the home gallery and sign up be next to each other and not on top */
+  }
+
+  #menu > li {
+    padding-left: 1rem;
+  }
+
+  .nav-toggle-label {
+    display: none;      /* removes the X */
+  }
+
 }
