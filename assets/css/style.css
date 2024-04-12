@@ -87,11 +87,11 @@ nav {
 
 /* Main content */
 main {
-  background-color: lightblue;
   /* Make main element take up any surplus space to push footer down */
   flex: 1 0 auto;
   margin-top: 47px;     /* to push the main content down as the header is set to fixed */
 }
+
 
 /* Footer */
 #social-networks {
