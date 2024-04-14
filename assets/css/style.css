@@ -213,6 +213,15 @@ main {
   color: #3a3a3a;
 }
 
+
+/* Media query: large or landscape phone (576px and up) */
+@media screen and (min-width: 576px) {
+  #photos {
+    column-count: 2;      /* put pictures in 2 columns */
+    column-gap: 0;        /* remove the gap between the pictures */
+  }
+}
+
 /* Media query: tablets and larger (786px and up) */
 /* This is to make the webpage respond differently to mobile, tablet, laptop and pc */
 @media screen and (min-width: 768px) {
@@ -271,6 +280,11 @@ main {
     text-align: end;
     align-self: flex-end;
   }
+
+  /* Gallery */
+  #photos {
+    column-count: 3;
+  }
 }
 
 
@@ -278,6 +292,11 @@ main {
 @media screen and (min-width: 992px) {
   #menu a:hover {
     border-bottom: 1px solid #3a3a3a;
+  }
+
+/* Gallery */
+  #photos {
+    column-count: 4;
   }
 }
 
